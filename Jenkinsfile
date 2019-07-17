@@ -42,13 +42,13 @@ stage("Deploy to staging") {
      }
 }
 
-stage("Acceptance test") {
-     steps {
-          sleep 60
-	  sh    "chmod +x ./acceptance_test_docker.sh"
-          sh "./acceptance_test_docker.sh"
-     }
-}
+//stage("Acceptance test") {
+//     steps {
+  //        sleep 60
+//	  sh    "chmod +x ./acceptance_test_docker.sh"
+  //        sh "./acceptance_test_docker.sh"
+  //   }
+//}
      }
 	 post {
      always {
