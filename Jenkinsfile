@@ -29,7 +29,7 @@ stage("Docker build") {
 
 stage("Docker push") {
      steps {
-	  sh "docker login -u monusraj -p chinki12"
+	  sh "docker login -u monusraj -p 25900519"
 
           sh "docker push jenkins/calculator_1"
      }
