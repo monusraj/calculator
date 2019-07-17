@@ -23,7 +23,7 @@ stage("Package") {
 stage("Docker build") {
      steps {
 	     
-          sh "docker build -t jenkins/calculator_1 ."
+          sh "docker build -t monusraj/jenkins ."
      }
 }
 
@@ -31,7 +31,7 @@ stage("Docker push") {
      steps {
 	  sh "docker login -u monusraj -p 25900519"
 
-          sh "docker push jenkins/calculator_1"
+          sh "docker push monusraj/jenkins"
      }
 }
 stage("Deploy to staging") {
