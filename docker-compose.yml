@@ -1,8 +1,8 @@
 version: "3"
 services:
      calculator:
-          image: calculator_1:latest
+          image: jenkins:latest
           ports:
-               - 8080
+               - 8081
      redis:
           image: redis:latest
